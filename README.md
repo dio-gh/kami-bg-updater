@@ -28,14 +28,14 @@ pip install requests
 1. Download the script from GitHub by
    * visiting the script file (`updater.py`) in the repository,
    * clicking on the `Raw` button to display the original file,
-   * pressing `CTRL+S` to save it to your PCSX2 installation directory (where `pcsx2x64-avx2.exe` is)
+   * pressing `CTRL+S` to save it to your desired KAMI installation directory (where `KAMI.Windows.exe` is)
 
 2. Open the Start Menu, then search for and open `Task Scheduler`
 
 3. Click on `Create Task...`
 
 4. Configure the updater task as follows:
-   * for `Name`, give it something descriptive, like `PCSX2 Background Updater`
+   * for `Name`, give it something descriptive, like `KAMI Background Updater`
    * on the `Triggers` tab, add a new trigger:
      * for `Begin the task`, select `On Schedule`
      * for frequency, select `One time` (confusing, I know)
@@ -46,7 +46,7 @@ pip install requests
      * for `Action:` you'll want `Start a program`
      * for `Program/script:` you'll want to simply type in `pythonw`
      * for `Add arguments:`, you'll need to provide the path to the script file
-       * navigate to your PCSX2 installation directory where you've downloaded it
+       * navigate to your KAMI installation directory where you've downloaded it
        * hold `CTRL` and right click
        * select `Copy full path`
        * paste it into the `Add arguments:` textbox (and don't remove the quotes around it)
